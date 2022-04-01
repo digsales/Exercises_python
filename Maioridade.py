@@ -6,7 +6,7 @@ dia = datetime.date.today().day
 
 while True:
     try:
-        nasc = int(input('Digite seu ano de nascimento: '))
+        nasc = int(input('Digite seu ANO de nascimento: '))
         if nasc < ano - 150:
             print('\033[1;31m' + f'Digite um ano acima de {ano - 150}!' + '\033[0;0m')
         elif nasc > ano:
