@@ -13,7 +13,9 @@ while True:
         try:
             nota1 = float(input('Nota 1: '))
             if nota1 < 0:
-                print('\033[31mDigite um valor 0 ou maior!\033[0m')
+                print('\033[31mDigite um valor entre 0 e 10!\033[0m')
+            elif nota1 > 10:
+                print('\033[31mDigite um valor entre 0 e 10!\033[0m')
             else:
                 break
         except:
@@ -22,7 +24,9 @@ while True:
         try:
             nota2 = float(input('Nota 2: '))
             if nota2 < 0:
-                print('\033[31mDigite um valor 0 ou maior!\033[0m')
+                print('\033[31mDigite um valor entre 0 e 10!\033[0m')
+            elif nota2 > 10:
+                print('\033[31mDigite um valor entre 0 e 10!\033[0m')
             else:
                 break
         except:
