@@ -66,7 +66,9 @@ while True:
             levantamento = int(input('Mostrar dados de qual jogador? [999 para encerrar]: '))
             if levantamento == 999:
                 break
-            elif levantamento < 0 or levantamento > len(lista) - 1:
+            elif levantamento < 0:
+                print('\033[31mDigite um valor válido!\033[0m')
+            elif levantamento > len(lista) - 1:
                 print('\033[31mDigite um valor válido!\033[0m')
             else:
                 break
